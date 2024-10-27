@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="progress-bar">
+            <div id="correct-progress"></div>
+            <div id="partial-progress"></div>
+            <div id="incorrect-progress"></div>
+        </div>
+        
+        <div id="question-picker">
+            <select id="question-selector"></select>
+        </div>
+
+        <div id="question-container">
+            <h2 id="question"></h2>
+            <ul id="answers-list"></ul>
+            <div id="navigation-buttons">
+                <button id="shuffle-btn">Shuffle</button>
+                <button id="next-btn">Next</button>
+            </div>
+            <button id="submit-btn">Submit</button>
+            <p id="feedback"></p>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
