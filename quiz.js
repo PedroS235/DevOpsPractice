@@ -1040,6 +1040,7 @@ questionSelector.addEventListener("change", (e) => {
 document.getElementById("next-btn").addEventListener("click", () => {
     const questions = Object.keys(quizData);
     let nextIndex = questions.indexOf(currentQuestion) + 1;
+    questionSelector.selectedIndex = nextIndex;
     if (nextIndex >= questions.length) nextIndex = 0;
     loadQuestion(questions[nextIndex]);
 });
